@@ -1,0 +1,189 @@
+html{
+    font-size: 12px;
+    margin:0;
+}
+a{
+    text-decoration: none;
+    color: hsla(0,0%,100%,.6);
+    transition: color .1s;
+    font-family: sans-serif;
+
+}
+.wrapper{
+    margin:0;
+}
+a:hover{
+    color: white;
+}
+.dropdown i{
+    color: hsla(0,0%,100%,.6);
+}
+nav{
+    background-color: #131313;
+    margin:0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.navigation{
+    font-size: 1em;
+}
+.left.navigation{
+    margin:0;
+    padding: 0;
+    width:50%;
+    margin-left: 1%;
+}
+.left.navigation li:first-of-type a{
+    color:white;
+}
+li  {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 8px 4px;
+    text-decoration: none;
+  }
+li.dropdown {
+    display: inline-block;
+    padding-right: 0;
+  }
+.dropdown-content {
+    display: block;
+    height: 0;
+    opacity: 0;
+    transition:opacity .2s linear ;
+    position: absolute;
+    background-color:#131313;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    overflow: hidden;
+  }
+.dropdown-content a {
+    padding: 10px 16px;
+    padding-left: 2%;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  .dropdown-content:after{
+      content: "";
+      display: block;
+      height:1px;
+      width:100%;
+      background-color: rgb(50, 50, 50);
+      position: absolute;
+      top:50%;
+  }
+  
+.dropdown:hover .dropdown-content {
+    height: auto;
+    opacity: 1;                    }
+.right.navigation{
+    width: 20%;
+    margin:0;
+    padding:0;
+}
+header{
+    display:flex;
+    flex-direction: column;
+}
+.header-nav{
+    height: 8vh;
+    display: flex;
+    flex-direction: row;
+    background-color:rgb(249, 249, 249);
+    justify-content: space-between;
+    align-items: center;
+
+}
+.header-left{
+    width:65%;
+    padding-left: 0;
+    margin-left: 1%;
+    border-right:1px solid  rgb(230, 230, 230);
+    
+}
+.header-left li a{
+    padding:15px 2px ;
+    color:#aaa;
+    font-size: 1.2em;
+    transition: color .1s linear;
+   
+}
+.header-left li a:hover{
+    color:#555;
+}
+.header-right{
+    width:35%;
+    padding-left: 0;
+    margin:0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+   
+}
+.header-right li{
+    padding:5px 2px;
+}
+.header-right li>*{
+    color:#aaa;
+    font-size: 0.9em;
+}
+.header-right li i{
+    font-size: 1.4em;
+    transform: rotate(90deg);
+}
+.image{
+    width:12em;
+    height: 4em;
+    background: url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/misc/event-bl-tnw2020.svg) center no-repeat;
+}
+.header-right li p{
+    display: inline-block;
+    word-spacing: -1px;
+    font-weight: 500;
+    color:#555;
+}
+.header-right li span{
+    font-size: 1.8em;
+    padding:0 5px;
+    color: #f42;
+    font-weight: 500;
+    letter-spacing: 0.5;
+    font-family: sans-serif;
+   
+}
+.text{
+    display: flex;
+    flex-direction: row;
+    align-items: center;                 }
+.header-right li button{
+    width:100%;
+    padding: 0;
+    font-size: 0.9rem;
+    text-align: center;
+    height: 100%;
+    word-spacing: -1px;
+    letter-spacing: 0.1;
+    border-radius: 5%;
+    background-color: #0cc;
+    color: white;
+    border:1px solid #0cc;
+    font-weight: 700;
+    box-shadow: none;
+}
+.join{
+    height:2.2em;
+    width:17%;
+    padding-right: 0px;
+    padding-left: 0;
+}
+.header-bottom{
+    height:5vh;
+}
+.header-bottom a{
+    font-size: 1em;
+    color: black;
+}
