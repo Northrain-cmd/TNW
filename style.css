@@ -182,8 +182,145 @@ header{
 }
 .header-bottom{
     height:5vh;
+    display: flex;
+    align-items: center;
+    background-color: #fd3;
 }
 .header-bottom a{
+
     font-size: 1em;
     color: black;
+    text-align: center;
+    margin-left: 1.5%;
+}
+.main{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows:1fr 1fr;
+    grid-template-areas:'big_image right_image_1'
+                        'big_image right_image_2';
+    height: 70vh;
+}
+.big_image{
+    background:transparent url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/cover-gradient.png) no-repeat;
+    background-size: cover;
+    background-position: 0 0;
+    mix-blend-mode: lighten;
+    z-index: 4;        
+    position: absolute;
+    bottom: 4px;
+    left: 4px;
+    top: 4px;
+    right: 4px;
+                    }
+.main_image{
+    grid-area:big_image;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+        }
+.image_cover{
+    background:#000 url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/08/twitter-796x417.png) no-repeat 50%;
+    z-index: 1; 
+    background-size: cover;
+    position: absolute;
+    bottom: 4px;
+    left: 4px;
+    top: 4px;
+    right: 4px;
+                    }
+.gradient-cover{
+    background:rgba(0,0,0,.25) url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/image-gradient.png) no-repeat;
+    background-size: 100% 100%;
+    transition: background-color .4s ease;
+    z-index: 2;
+    position: absolute;
+    position: absolute;
+    bottom: 4px;
+    left: 4px;
+    top: 4px;
+    right: 4px;               
+}
+.article_image:hover .gradient-cover{
+    background-color: rgba(0,0,0,.1);   }
+.logo{
+    max-width: 50%;
+    position: absolute;
+    z-index: 100;
+    overflow: hidden;
+}
+.logo img{
+    max-width: 100%;
+}
+.date{
+    position: absolute;
+    right: 2%;
+    top: 1%;
+    z-index: 5;
+    font-size: 1.2em;
+    color: #fff;
+}
+.apps{
+    z-index: 5;
+    color: #fff;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.theme{
+    position: absolute;
+    left:2%;
+    bottom:2%;
+    z-index: 5;
+    display: flex;
+    flex-direction: column;
+}
+.author{
+    display: flex;
+    flex-direction: row;
+    font-size: 1em;
+    color: hsla(0,0%,100%,.6);
+    align-items: center;
+}
+.author i{
+    font-size: 1.2em;
+    padding:0;
+    margin:0 1%;
+}
+.theme>p:not(.apps){
+    font-size: 4em;
+    font-weight: 900;
+    color: #fff;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.right_1{
+    grid-area: right_image_1;
+    background: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/02/Bloomberg-796x417.jpg) no-repeat;
+    background-size: cover;
+    max-width: 100%;
+    position: relative;
+    z-index: 5;
+    margin:4px;
+}
+.right_2{
+    grid-area: right_image_2;
+    background: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/02/Whatsapp-bug-warning-796x420.jpg) no-repeat;
+    background-size: cover;
+    max-width: 100%;
+    background-position: 50%;
+    position: relative;
+    z-index: 5;
+    margin:4px;
+
+}
+.small{
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.theme.small_theme> p{
+    font-size: 2em;
 }
