@@ -435,6 +435,15 @@ header{
     position: relative;
     height:100%;
 }
+.funding_item--image.second{
+    background-image: url(https://img-cdn.tnwcdn.com/image?url=https%3A%2F%2Fpbs.twimg.com%2Fprofile_images%2F1164130858154045441%2Fc8Uq9Ymu.jpg&signature=1b19d8545aee2b2b663c8beb5c9c9f5e);
+}
+.funding_item--image.third{
+    background-image: url(https://img-cdn.tnwcdn.com/image?url=https%3A%2F%2Fpbs.twimg.com%2Fprofile_images%2F1047003942301917186%2FOjAllu48.jpg&signature=74b80303d8f0c6c168b622514c6e8f26);
+}
+.funding_item--image.fourth{
+    background-image: url(https://img-cdn.tnwcdn.com/image?url=https%3A%2F%2Fpbs.twimg.com%2Fprofile_images%2F1206620497187729408%2FJTdB-nl-.png&signature=15d54eab3c620ec4f9e9d6ef7fb994ba);
+}
 .funding-main{
     height: 20vh;
     position: relative;
@@ -472,6 +481,7 @@ header{
 .funding_item--bot p:first-of-type{
     font-size: 1.3em;
     margin-bottom: 0;
+    margin-left: 15%;
     font-weight: 700;
     color: black;
 
@@ -480,7 +490,9 @@ header{
     font-size: 1em;
     font-weight: 700;
     margin-top: 3%;
+    margin-left: 15%;
     color:#aaa;
+    text-transform: uppercase;
 }
 .tag{
     display: flex;
@@ -501,6 +513,7 @@ header{
     width:100%;
     background-color: #f42;
     margin-top: -5%;
+    opacity: .35;
     margin-bottom: 5%;
 }
 .Info{
