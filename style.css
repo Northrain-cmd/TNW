@@ -9,6 +9,9 @@ a{
     font-family: sans-serif;
 
 }
+.show-sm{
+    display: none;
+}
 .wrapper{
     margin:0;
 }
@@ -236,7 +239,6 @@ header{
     transition: background-color .4s ease;
     z-index: 2;
     position: absolute;
-    position: absolute;
     bottom: 4px;
     left: 4px;
     top: 4px;
@@ -267,6 +269,14 @@ header{
     font-size: 1.2em;
     text-transform: uppercase;
     font-weight: 700;
+}
+.join button{
+    transition: color .1s linear;
+    border-radius: 10%;
+}
+.join button:hover{
+    background-color: #90c;
+    border: none;
 }
 .theme{
     position: absolute;
@@ -369,6 +379,7 @@ header{
     font-size: 1.3em;
     color: black;
     font-weight: 900;
+    width:90%;
     margin-top: 0;
     transition: color .1s linear;
 }
@@ -523,4 +534,496 @@ header{
     color:#aaa;
     margin-top: 0;
 } 
+.popular{
+    width:90%;
+    justify-content: space-between;
+    margin:0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.popular:after{
+    flex:auto;
+    content: "";
+}
+.popular_item:last-child{
+    margin-left: 3%;
+}
+.popular_item{
+    display: flex;
+    flex-direction: column;
+    width:31%;
+}
+.popular_image{
+    background: url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/image-gradient.png)  no-repeat, url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/08/twitter-796x417.png) no-repeat,rgba(0,0,0,.25);
+    mix-blend-mode: darken;
+    background-size: 100% 100%, cover;
+    height:35vh;
+    position: relative;
+}
+.popular_info{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom:5%;
+    left:5%;
+    justify-content: space-between;
+    height:40%;
+}
+.popular_info>p{
+    margin: 0;
+    color:white;
+}
+.popular_info p:first-of-type{
+    font-weight: 500;
+}
+.popular_name{
+    font-size: 1.5em;
+    font-weight: 700;
+    margin-bottom: 10%;
+    display: inline-block;
+}
+.popular_name:hover{
+    text-decoration: underline;
+}
+.popular_author{
+    color: #aaa !important;
+}
+.latest{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(255,68,34,.06);
+    height:15vh;
+}
+.latest_text{
+    display: flex;
+    width:70%;
+    flex-direction: column;
+    margin-top: -2%;
+   
+}
+
+.late_image{
+    background:#000 url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2017/05/Instagram-Face-Filters.jpg) no-repeat;
+    background-position: 50%;
+    background-size: cover;
+    width:25%;
+    height: 100%;
+}
+.latest_text>p{
+    margin: 0;
+    margin-left: 5%;
+    margin-top: 5%;
+    color: #f42;
+    font-size: 1.1em;
+}
+.latest_text p:first-child{
+    margin-bottom: 0;
+}
+.latest_text p:last-child:hover{
+    text-decoration: underline;
+}
+.latest_text p:last-child{
+    margin-top: 2%;
+    font-weight: 700;
+}
+.news_list li a{
+    color:#555;
+    font-size: 1em;
+    transition: color .1s linear;
+}
+.news_list li{
+    padding:5px 5px;
+    padding-left: 3%;
+    text-align: left;
+    position: relative;
+}
+.news_list li a:hover{
+    color: black;
+}
+.news_list{
+    list-style-type: none;
+    padding-left:0;
+}
+.news_list li:after{
+    content: "";
+      display: block;
+      height:1px;
+      width:100%;
+      background-color: rgb(220, 220, 220);
+      margin-top: 2%;
+}
+.news_list li::before{
+background-color:#f42;
+border-radius: 50%;
+content: "";
+display: block;
+height: 4px;
+left: 0;
+position: absolute;
+top: 13px;
+width: 4px;
+}
+.latest_deals_item figure{
+    position: relative;
+}
+.old_price{
+    font-size: 1.1em;
+    text-decoration: line-through;
+}
+.new_price{
+    color:#555;
+    font-size: 1.3em;
+}
+.discount{
+    position: absolute;
+    right:0;
+    top:0;
+    width:40%;
+    height:40%;
+    background: url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/deals-ribbon.svg) no-repeat ;
+    background-position: 100% 50%;
+}
+.discount p{
+    transform: rotate(45deg);
+    position: absolute;
+    right:0;
+    top:25%;
+    color: black !important;
+    font-weight: 700;
+    font-size: 1.1em;
+    
+}
+footer{
+    margin-top: 15%;
+}
+.footer_first{
+    height:30vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #222;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+.list_of_icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:50%;
+    margin:0 auto;
+    margin-top: 2%;
+    height: 40%;
+}
+.list_of_links a{
+    margin: 0 2%;
+    font-size: 1.1em;
+    color: #aaa;
+    transition: color .1s linear;
+}
+.list_of_links a:hover{
+    color: white;
+}
+.list_of_links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:50%;
+    margin: 0 auto;
+    height: 40%;
+}
+.link_div{
+    width:6%;
+    height: 50%;
+    border:1px solid transparent;
+    border-radius: 50%;
+    background:#888;
+    margin:0 1.5%;
+    transition: color .1s linear;
+    transition: border .1s linear;
+}
+.link_div:hover{
+    background-color: #666;
+    border: 1px solid white;
+}
+.link_div img{
+    max-width: 100%;
+    max-height: 70%;
+   padding:0.3em;
+}
+.link_div.first{
+    background-image: url(https://image.flaticon.com/icons/svg/1384/1384005.svg);
+    background-repeat: no-repeat;
+    background-size: 2.5em;
+    background-position: center;
+}
+.link_div.second{
+    background-image: url(https://image.flaticon.com/icons/svg/733/733635.svg);
+    background-repeat: no-repeat;
+    background-size: 2.5em;
+    background-position: center;
+}
+.link_div.third{
+    background-image: url(https://image.flaticon.com/icons/svg/733/733646.svg);
+    background-repeat: no-repeat;
+    background-size: 2.5em;
+    background-position: center;
+}
+.link_div.fourth{
+    background-image: url(https://image.flaticon.com/icons/svg/1384/1384031.svg);
+    background-repeat: no-repeat;
+    background-size: 2.5em;
+    background-position: center;
+}
+.link_div.fifth{
+    background-image: url(https://image.flaticon.com/icons/svg/733/733622.svg);
+    background-repeat: no-repeat;
+    background-size: 2.5em;
+    background-position: center;
+}
+.link_div.sixth{
+    background-image: url(https://image.flaticon.com/icons/svg/1051/1051362.svg);
+    background-repeat: no-repeat;
+    background-size: 2.5em;
+    background-position: center;
+}
+.link_div.seventh{
+    background-image: url(https://image.flaticon.com/icons/svg/561/561127.svg);
+    background-repeat: no-repeat;
+    background-size: 2.5em;
+    background-position: center;
+}
+.funding_header_column{
+    display: none;
+}
+
+.footer_second{
+    height:40%;
+}
+@media only screen and (max-width:800px){
+    .hide{
+        display: none;
+    }
+    .popular_image{
+        background-position: 20%;
+    }
+    .header-right{
+        justify-content: center;
+        margin-right: 5%;
+        width:10%;
+    }
+    .header-left{
+        width:90%;
+    }
+    .right.navigation{
+        width:35%;
+    }
+    .left.navigation{
+        width:65%;
+    }
+    .main{
+        height: 40vh;
+    }
+    .news_item{
+        width:33.3%;
+    }
+    .news_container::after{
+        content: "";
+        flex: auto;
+    }
+    .show{
+        display: block;
+    }
+    .funding_header{
+        flex-direction: column;
+        align-items: flex-start;
+       
+    }
+    .funding_header_column li{
+        display: block;
+        text-align: left;
+        padding:3px 6px;
+        padding-left: 0;
+        font-size: 1.1em;
+
+    }
+    .funding_item{
+        width:32%;
+    }
+    .funding-main{
+        height:10vh;
+    }
+    .funding_item--top{
+        padding-left: 15%;
+    }
+    .funding_item--bot{
+        padding-left: 10%;
+    }
+    .popular_item{
+        width:48%;
+        height:60vh;
+    }
+    .discount p{
+        top:25%;
+        right:-5%;
+        font-size: 0.9em;
+    }
+    .footer_first{
+        height:15vh;
+    }
+    .link_div{
+        background-size: 0.7em;
+        height:50%;
+        width: 8%;
+    }
+    .link_div{
+        background-size:1.4rem !important;
+    
+    }
+}
+
+@media only screen and (max-width:750px){
+    .header-nav{
+        justify-content: space-between;
+        height:5vh;
+    }
+    .logo_image{
+        max-width: 100%;
+        padding-top: 10%;
+    }
+    .show-sm{
+        height: 100%;
+        width:20%;
+        background-image: linear-gradient(to bottom right,#c09,#f42 85%);
+        display: block;
+    }
+        .bottom_text>*{
+            margin:0;
+        }
+        .bottom_text{
+            height: 100%;
+        }
+        .popular_item{
+            height:auto;
+        }
+    .hide{
+        display: none;
+    }
+    .hide-sm{
+        display: none;
+    }
+    .main{
+       grid-template-columns: 1fr;
+       grid-template-rows: 1fr 1fr 1fr;
+       grid-template-areas: "big_image"
+       "right_image_1"
+       "right_image_2";
+       height: 100vh;
+        row-gap: 1%;
+    }
+    .theme{
+        font-size: 0.7em !important;
+    }
+    .date{
+        font-size: 1em;
+    }
+    .author{
+        font-size: 1.5em;
+    }
+    .news_item{
+        width:100%;
+        flex-direction: row;
+        align-items: center;
+    }
+    .news_item_info{
+        display: flex;
+        flex-direction: column;
+        width:70%;
+        height:80%;
+    }
+    .news_item figure{
+        width:30%;
+        margin:0;
+        margin-right: 5%;
+    }
+    .funding_item{
+        width:100%;
+        flex-direction: row;
+    }
+    .funding_item a{
+        width:100%;
+    }
+    .funding_container{
+        flex-direction: column;
+    }
+    .funding-container{
+        flex-direction: column;
+    }
+    .funding-main{
+        width:100%;
+    }
+    .popular{
+        flex-direction: column;
+    }
+    .popular_item{
+        width:100%;
+    }
+    .latest_deals_item{
+        margin-bottom: 3%;
+    }
+    .latest_deals_item a{
+        font-size: 1.1em !important;
+    }
+    .link_div{
+        background-size: contain;
+        height:50%;
+        width: 20%;
+    }
+    .list_of_icons{
+        width:70%;
+    }
+    .link_div{
+        background-size:1.4rem !important;
+    
+    }
+}
+@media only screen and (max-width:375px){
+    .date{
+        font-size: 0.9em;
+    }
+    .author{
+        font-size:1rem !important;
+    }
+    .theme{
+        font-size: 0.5rem !important;
+    }
+    .small_theme{
+        font-size: 0.7rem !important;
+    }
+    .apps{
+        font-size: 1.8em;
+    }
+    .link_div{
+    background-size:1.4rem !important;
+
+}
+}
+@media only screen and (max-width:320px){
+    .theme{
+        font-size: 0.4rem !important;
+    }
+    .small_theme{
+        font-size: 0.8rem !important;
+    }
+.date{
+    font-size: 0.8em;
+}
+.apps{
+    font-size: 1rem;
+}
+.link_div{
+    background-size:1.4rem !important;
+}
+
 }
